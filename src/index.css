@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&family=Ubuntu+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  padding: 2rem;
+}
+
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+button {
+  border: none;
+  background: none;
+}
+
+footer {
+  color: #A9A9A9;
+  margin-top: 3.4rem;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.header-title {
+  color: #4F4F4F;
+  font-size: 2.4rem;
+  margin-bottom: 2.8rem;
+}
+
+.buttons-container {
+  display: grid;
+  justify-content: flex-start;
+  justify-items: flex-start;
+  gap: 20px 10px;
+  grid-template-columns: repeat(1, auto);
+}
+
+.buttons-tag {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+@media (min-width:33em) {
+  .buttons-container {
+    grid-template-columns: repeat(4, auto);
+  }
+  .buttons-tag {
+    grid-column: span 5;
+  }
+}
